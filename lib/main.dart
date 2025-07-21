@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart'; // ✅ Added import
-import 'firebase_options.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+
+import 'services/firebase_options.dart'; // ✅ Corrected import path
 
 import 'screens/phone_auth_screen.dart';
 import 'screens/home_screen.dart';
-import 'screens/quiz_screen.dart'; // ✅ Added quiz screen
+import 'screens/quiz_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
       home: PhoneAuthScreen(),
       routes: {
         '/home': (_) => const HomeScreen(),
-        '/quiz': (_) => const QuizScreen(), // ✅ Quiz route added
+        '/quiz': (_) => const QuizScreen(),
       },
     );
   }
