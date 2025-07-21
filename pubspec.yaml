@@ -44,7 +44,7 @@ flutter:
     - assets/images/
     - assets/sounds/
 
-flutter_icons:
+flutter_launcher_icons:
   android: true
   ios: false
   image_path: "assets/images/icon.png"
